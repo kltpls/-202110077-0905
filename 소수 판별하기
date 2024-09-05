@@ -1,0 +1,48 @@
+import math
+
+def is_prime(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+number = int(input("소수인지 확인할 숫자를 입력: "))
+if is_prime(number):
+    print(f"{number}는 소수입니다.")
+else:
+    print(f"{number}는 소수가 아닙니다.")
+
+
+
+
+def is_prime_with_break(n):
+    if n <= 1:
+        return False
+    if n <= 3:
+        return True
+    if n % 2 == 0 or n % 3 == 0:
+        return False
+    i = 5
+    while i * i <= n:
+        if n % i == 0 or n % (i + 2) == 0:
+            return False
+        i += 6
+    return True
+
+number = int(input("소수인지 확인할 숫자를 입력: "))
+if is_prime_with_break(number):
+    print(f"{number}는 소수입니다.")
+else:
+    print(f"{number}는 소수가 아닙니다.")
+
+
+
+

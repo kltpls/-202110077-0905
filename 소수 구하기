@@ -1,0 +1,11 @@
+def find_primes_in_range(start, end):
+    primes = []
+    for num in range(start, end + 1):
+        if is_prime(num):
+            primes.append(num)
+    return primes
+
+start = int(input("시작 숫자를 입력: "))
+end = int(input("끝 숫자를 입력: "))
+primes = find_primes_in_range(start, end)
+print(f"{start}부터 {end}까지의 소수는: {primes}")

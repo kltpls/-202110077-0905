@@ -1,0 +1,42 @@
+def celsius_to_fahrenheit(celsius):
+    return (celsius * 9/5) + 32
+
+def fahrenheit_to_celsius(fahrenheit):
+    return (fahrenheit - 32) * 5/9
+
+celsius = float(input("섭씨 온도를 입력: "))
+fahrenheit = celsius_to_fahrenheit(celsius)
+print(f"{celsius}°C는 {fahrenheit:.2f}°F입니다.")
+
+fahrenheit = float(input("화씨 온도를 입력: "))
+celsius = fahrenheit_to_celsius(fahrenheit)
+print(f"{fahrenheit}°F는 {celsius:.2f}°C입니다.")
+
+
+def meters_to_kilometers(meters):
+    return meters / 1000
+
+def kilometers_to_meters(kilometers):
+    return kilometers * 1000
+
+def inches_to_centimeters(inches):
+    return inches * 2.54
+
+def centimeters_to_inches(centimeters):
+    return centimeters / 2.54
+
+meters = float(input("미터를 입력: "))
+kilometers = meters_to_kilometers(meters)
+print(f"{meters} 미터는 {kilometers:.2f} 킬로미터입니다.")
+
+kilometers = float(input("킬로미터를 입력: "))
+meters = kilometers_to_meters(kilometers)
+print(f"{kilometers} 킬로미터는 {meters:.2f} 미터입니다.")
+
+inches = float(input("인치를 입력: "))
+centimeters = inches_to_centimeters(inches)
+print(f"{inches} 인치는 {centimeters:.2f} 센티미터입니다.")
+
+centimeters = float(input("센티미터를 입력: "))
+inches = centimeters_to_inches(centimeters)
+print(f"{centimeters} 센티미터는 {inches:.2f} 인치입니다.")

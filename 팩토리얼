@@ -1,0 +1,15 @@
+def factorial(n):
+
+    if n == 0 or n == 1:
+        return 1
+    else:
+
+        return n * factorial(n - 1)
+
+
+number = int(input("팩토리얼을 구할 숫자를 입력: "))
+if number < 0:
+    print("음수의 팩토리얼은 정의되지 않음.")
+else:
+    result = factorial(number)
+    print(f"{number}! = {result}")
